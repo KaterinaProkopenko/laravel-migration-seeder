@@ -13,7 +13,7 @@
                         <p class="card-text fw-bold">Parte alle <span class="fw-normal">{{$train->orario_di_partenza}}</span></p>
                         <p class="card-text fw-bold">Arriva alle <span class="fw-normal">{{$train->orario_di_arrivo}}</span></p>
                         <p class="card-text fw-bold">Codice: <span class="fw-normal">{{$train->codice_treno}}</span></p>
-                        <p class="card-text fw-bold">Status: </p>
+                        <p class="card-text fw-bold">Status: <span class="fw-normal">{{($train->in_orario) ? 'In orario' : 'Cancellato'}}</span></p>
                     </div>
                 </div>
                @endforeach
